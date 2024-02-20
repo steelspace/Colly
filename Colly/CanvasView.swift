@@ -1,10 +1,3 @@
-//
-//  CollageView.swift
-//  Colly
-//
-//  Created by Petr Valach on 16.02.2024.
-//
-
 import SwiftUI
 
 struct CollageView: View {
