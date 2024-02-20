@@ -11,7 +11,7 @@
 		3AEFFCD42B6CEA5E00026427 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AEFFCD32B6CEA5E00026427 /* ContentView.swift */; };
 		3AEFFCD62B6CEA5F00026427 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3AEFFCD52B6CEA5F00026427 /* Assets.xcassets */; };
 		3AEFFCDA2B6CEA5F00026427 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3AEFFCD92B6CEA5F00026427 /* Preview Assets.xcassets */; };
-		3AEFFCE12B6CF6F300026427 /* CollageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AEFFCE02B6CF6F300026427 /* CollageView.swift */; };
+		3AEFFCE12B6CF6F300026427 /* CanvasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AEFFCE02B6CF6F300026427 /* CanvasView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,7 +21,7 @@
 		3AEFFCD52B6CEA5F00026427 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3AEFFCD72B6CEA5F00026427 /* Colly.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Colly.entitlements; sourceTree = "<group>"; };
 		3AEFFCD92B6CEA5F00026427 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		3AEFFCE02B6CF6F300026427 /* CollageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollageView.swift; sourceTree = "<group>"; };
+		3AEFFCE02B6CF6F300026427 /* CanvasView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,7 +67,7 @@
 				3AEFFCD52B6CEA5F00026427 /* Assets.xcassets */,
 				3AEFFCD72B6CEA5F00026427 /* Colly.entitlements */,
 				3AEFFCD82B6CEA5F00026427 /* Preview Content */,
-				3AEFFCE02B6CF6F300026427 /* CollageView.swift */,
+				3AEFFCE02B6CF6F300026427 /* CanvasView.swift */,
 			);
 			path = Colly;
 			sourceTree = "<group>";
@@ -150,7 +150,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3AEFFCE12B6CF6F300026427 /* CollageView.swift in Sources */,
+				3AEFFCE12B6CF6F300026427 /* CanvasView.swift in Sources */,
 				3AEFFCD42B6CEA5E00026427 /* ContentView.swift in Sources */,
 				3AEFFCD22B6CEA5E00026427 /* CollyApp.swift in Sources */,
 			);

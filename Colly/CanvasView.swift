@@ -1,11 +1,19 @@
 import SwiftUI
 
-struct CollageView: View {
+struct CanvasView: View {
+    let images: [Image]
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        GeometryReader { geometry in
+            ZStack {
+                ForEach(0..<images.count, id: \.self) { index in
+                    images[index]
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: geometry.size.width / 2, height: geometry.size.height / 2)
+                        .position(x: CGFloat(index * 50 + 50), y: CGFloat(index * 50 + 50))
+                }
+            }
+        }
     }
-}
-
-#Preview {
-    CollageView()
 }
