@@ -1,18 +1,19 @@
-//
-//  ImageContainerView.swift
-//  Colly
-//
-//  Created by Petr Valach on 20.02.2024.
-//
-
 import SwiftUI
 
 struct ImageContainerView: View {
+    let image: Image
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ZStack {
+            image
+                .resizable()
+                .scaledToFill()
+        }
+        .padding(3)
+        .cornerRadius(3)
+        .overlay(
+            RoundedRectangle(cornerRadius: 3)
+            .stroke(.blue, lineWidth: 1)
+        )
     }
-}
-
-#Preview {
-    ImageContainerView()
 }

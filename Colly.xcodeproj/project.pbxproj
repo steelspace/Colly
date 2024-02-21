@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A417ACA2B852D400002E09A /* ImageContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A417AC92B852D400002E09A /* ImageContainerView.swift */; };
 		3AEFFCD22B6CEA5E00026427 /* CollyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AEFFCD12B6CEA5E00026427 /* CollyApp.swift */; };
 		3AEFFCD42B6CEA5E00026427 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AEFFCD32B6CEA5E00026427 /* ContentView.swift */; };
 		3AEFFCD62B6CEA5F00026427 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3AEFFCD52B6CEA5F00026427 /* Assets.xcassets */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3A417AC92B852D400002E09A /* ImageContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageContainerView.swift; sourceTree = "<group>"; };
 		3AEFFCCE2B6CEA5E00026427 /* Colly.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Colly.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AEFFCD12B6CEA5E00026427 /* CollyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollyApp.swift; sourceTree = "<group>"; };
 		3AEFFCD32B6CEA5E00026427 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -35,13 +37,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		3A98E90D2B6D139C005513F8 /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Extensions;
-			sourceTree = "<group>";
-		};
 		3AEFFCC52B6CEA5E00026427 = {
 			isa = PBXGroup;
 			children = (
@@ -61,13 +56,13 @@
 		3AEFFCD02B6CEA5E00026427 /* Colly */ = {
 			isa = PBXGroup;
 			children = (
-				3A98E90D2B6D139C005513F8 /* Extensions */,
 				3AEFFCD12B6CEA5E00026427 /* CollyApp.swift */,
 				3AEFFCD32B6CEA5E00026427 /* ContentView.swift */,
 				3AEFFCD52B6CEA5F00026427 /* Assets.xcassets */,
 				3AEFFCD72B6CEA5F00026427 /* Colly.entitlements */,
 				3AEFFCD82B6CEA5F00026427 /* Preview Content */,
 				3AEFFCE02B6CF6F300026427 /* CanvasView.swift */,
+				3A417AC92B852D400002E09A /* ImageContainerView.swift */,
 			);
 			path = Colly;
 			sourceTree = "<group>";
@@ -150,6 +145,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A417ACA2B852D400002E09A /* ImageContainerView.swift in Sources */,
 				3AEFFCE12B6CF6F300026427 /* CanvasView.swift in Sources */,
 				3AEFFCD42B6CEA5E00026427 /* ContentView.swift in Sources */,
 				3AEFFCD22B6CEA5E00026427 /* CollyApp.swift in Sources */,
