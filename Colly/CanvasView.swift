@@ -42,8 +42,14 @@ func calculateImagePositions(photoData: [PhotoData],
     var i = 0
     var left = 0.0
     for photo in photoData {
-        let width = widths[i]
-        let height = width / photo.aspectRatio
+        var width = widths[i]
+        var height = width / photo.aspectRatio
+        
+        if height > canvasHeight {
+            height = canvasHeight
+            width = height * photo.aspectRatio
+        }
+        
         let y = 0.0
         let x = left
         
