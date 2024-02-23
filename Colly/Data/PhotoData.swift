@@ -1,8 +1,7 @@
-//
-//  PhotoData.swift
-//  Colly
-//
-//  Created by Petr Valach on 23.02.2024.
-//
+import SwiftUI
 
-import Foundation
+struct PhotoData {
+    let width: CGFloat
+    let height: CGFloat
+    let image: Image
+}

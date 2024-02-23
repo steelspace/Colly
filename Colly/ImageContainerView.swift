@@ -7,7 +7,7 @@ struct ImageContainerView: View {
         ZStack {
             image
                 .resizable()
-                .scaledToFill()
+                .scaledToFit()
         }
         .padding(3)
         .cornerRadius(3)
