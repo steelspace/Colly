@@ -5,15 +5,20 @@ struct CanvasView: View {
     
     var body: some View {
         GeometryReader { geometry in
-            ZStack(alignment: .topLeading, content: {
+            ZStack(alignment: .topTrailing, content: {
+                let imagePositions = calculateImagePositions(photoData: photoData,
+                                                             canvasWidth: geometry.size.width,
+                                                             canvasHeight: geometry.size.height,
+                                                             columns: 3)
                 Rectangle().background(Color.white)
                 ForEach(0..<photoData.count, id: \.self) { index in
                     
-                    let imagePosition = calculateImagePositions(photoData: photoData[index], canvasWidth: geometry.size.width, canvasHeight: geometry.size.height, column: index, row: 0, columns: 3, rows: 1)
+                    let imagePosition = imagePositions[index]
                                        
                     ImageContainerView(image: photoData[index].image)
                         .frame(width: imagePosition.width, height: imagePosition.height)
-                        .position(x: imagePosition.x + imagePosition.width / 2.0, y: imagePosition.y + imagePosition.height / 2.0)
+                        .position(x: imagePosition.x + imagePosition.width / 2.0,
+                                  y: imagePosition.y + imagePosition.height / 2.0)
                 }
             })
         }
@@ -27,12 +32,31 @@ struct ImagePosition {
     let height: CGFloat
 }
 
-func calculateImagePositions(photoData: PhotoData, canvasWidth: CGFloat, canvasHeight: CGFloat,
-                             column: Int, row: Int,
-                             columns: Int, rows: Int) -> ImagePosition {
-    let imgWidth = canvasWidth / CGFloat(columns)
-    let imgHeight = canvasHeight / CGFloat(rows)
+func calculateImagePositions(photoData: [PhotoData],
+                             canvasWidth: CGFloat,
+                             canvasHeight: CGFloat,
+                             columns: Int) -> [ImagePosition] {
+    let widths = calculateRectanglesWidths(boxWidth: canvasWidth, relativeWidths: photoData.map { $0.aspectRatio })
+    var imagePositions = [ImagePosition]()
+    
+    var i = 0
+    var left = 0.0
+    for photo in photoData {
+        let width = widths[i]
+        let height = width / photo.aspectRatio
+        let y = 0.0
+        let x = left
+        
+        imagePositions.append(ImagePosition(x: x, y: y,
+                                            width: width, height: height))
+        left += width
+        i += 1
+    }
 
-    return ImagePosition(x: imgWidth * CGFloat(column), y: imgHeight * CGFloat(row),
-                         width: imgWidth, height: imgHeight)
+    return imagePositions
+}
+
+func calculateRectanglesWidths(boxWidth: Double, relativeWidths: [Double]) -> [Double] {
+    let totalRelativeWidth = relativeWidths.reduce(0, +)
+    return relativeWidths.map { ($0 / totalRelativeWidth) * boxWidth }
 }

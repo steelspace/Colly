@@ -36,5 +36,8 @@ struct ContentView: View {
     guard let nsImage = renderer.nsImage else {
         return nil
     }
-    return PhotoData(width: nsImage.size.width, height: nsImage.size.height, image: image)
+    let width = nsImage.size.width
+    let height = nsImage.size.height
+    let aspectRatio = width / height
+    return PhotoData(width: width, height: height, aspectRatio: aspectRatio, image: image)
 }
