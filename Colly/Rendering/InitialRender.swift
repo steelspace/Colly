@@ -13,7 +13,7 @@ func initialLayout(photoData: [PhotoData]) -> RenderLayout {
                                 row: row,
                                 indexInRow: indexInRow,
                                 originalAspectRatio: photo.aspectRatio,
-                                aspectRatio: photo.aspectRatio)
+                                widthRatio: photo.aspectRatio)
         
         renderData.append(render)
         

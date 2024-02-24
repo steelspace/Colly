@@ -156,8 +156,8 @@
             filePath = "Colly/CanvasView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "80"
-            endingLineNumber = "80"
+            startingLineNumber = "73"
+            endingLineNumber = "73"
             landmarkName = "calculateImagePositions(photoData:canvasWidth:canvasHeight:columns:rows:)"
             landmarkType = "9">
          </BreakpointContent>
@@ -172,8 +172,8 @@
             filePath = "Colly/CanvasView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "42"
-            endingLineNumber = "42"
+            startingLineNumber = "35"
+            endingLineNumber = "35"
             landmarkName = "calculateImagePositions(photoData:canvasWidth:canvasHeight:columns:rows:)"
             landmarkType = "9">
             <Locations>
@@ -220,8 +220,8 @@
             filePath = "Colly/CanvasView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "84"
-            endingLineNumber = "84"
+            startingLineNumber = "77"
+            endingLineNumber = "77"
             landmarkName = "calculateRectanglesWidths(boxWidth:relativeWidths:)"
             landmarkType = "9">
          </BreakpointContent>
@@ -236,8 +236,8 @@
             filePath = "Colly/CanvasView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "45"
-            endingLineNumber = "45"
+            startingLineNumber = "38"
+            endingLineNumber = "38"
             landmarkName = "calculateImagePositions(photoData:canvasWidth:canvasHeight:columns:rows:)"
             landmarkType = "9">
          </BreakpointContent>
@@ -268,8 +268,8 @@
             filePath = "Colly/CanvasView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "54"
-            endingLineNumber = "54"
+            startingLineNumber = "47"
+            endingLineNumber = "47"
             landmarkName = "calculateImagePositions(photoData:canvasWidth:canvasHeight:columns:rows:)"
             landmarkType = "9">
          </BreakpointContent>
@@ -284,8 +284,8 @@
             filePath = "Colly/CanvasView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "55"
-            endingLineNumber = "55"
+            startingLineNumber = "48"
+            endingLineNumber = "48"
             landmarkName = "calculateImagePositions(photoData:canvasWidth:canvasHeight:columns:rows:)"
             landmarkType = "9">
          </BreakpointContent>

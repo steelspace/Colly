@@ -27,13 +27,6 @@ struct CanvasView: View {
     }
 }
 
-struct ImagePosition {
-    let x: CGFloat
-    let y: CGFloat
-    let width: CGFloat
-    let height: CGFloat
-}
-
 func calculateImagePositions(photoData: [PhotoData],
                              canvasWidth: CGFloat,
                              canvasHeight: CGFloat,

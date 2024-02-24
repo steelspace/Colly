@@ -10,6 +10,9 @@
 		3A12F5772B89E35C000CD30E /* RenderData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A12F5762B89E35C000CD30E /* RenderData.swift */; };
 		3A12F5792B89E48B000CD30E /* InitialRender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A12F5782B89E48B000CD30E /* InitialRender.swift */; };
 		3A27488A2B89EF6500FC9668 /* RenderLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2748892B89EF6500FC9668 /* RenderLayout.swift */; };
+		3A27488C2B8A276700FC9668 /* ImagePosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A27488B2B8A276700FC9668 /* ImagePosition.swift */; };
+		3A27488E2B8A279600FC9668 /* LayoutManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A27488D2B8A279600FC9668 /* LayoutManager.swift */; };
+		3A2748902B8A2D4E00FC9668 /* RowData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A27488F2B8A2D4E00FC9668 /* RowData.swift */; };
 		3A2B2BE42B88939600CA14F8 /* PhotoData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2B2BE32B88939600CA14F8 /* PhotoData.swift */; };
 		3A417ACA2B852D400002E09A /* ImageContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A417AC92B852D400002E09A /* ImageContainerView.swift */; };
 		3AE889712B88E7A5008C658B /* SelectLayoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AE889702B88E7A5008C658B /* SelectLayoutView.swift */; };
@@ -25,6 +28,9 @@
 		3A12F5762B89E35C000CD30E /* RenderData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RenderData.swift; sourceTree = "<group>"; };
 		3A12F5782B89E48B000CD30E /* InitialRender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialRender.swift; sourceTree = "<group>"; };
 		3A2748892B89EF6500FC9668 /* RenderLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RenderLayout.swift; sourceTree = "<group>"; };
+		3A27488B2B8A276700FC9668 /* ImagePosition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePosition.swift; sourceTree = "<group>"; };
+		3A27488D2B8A279600FC9668 /* LayoutManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutManager.swift; sourceTree = "<group>"; };
+		3A27488F2B8A2D4E00FC9668 /* RowData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowData.swift; sourceTree = "<group>"; };
 		3A2B2BE32B88939600CA14F8 /* PhotoData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoData.swift; sourceTree = "<group>"; };
 		3A417AC92B852D400002E09A /* ImageContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageContainerView.swift; sourceTree = "<group>"; };
 		3AE889702B88E7A5008C658B /* SelectLayoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectLayoutView.swift; sourceTree = "<group>"; };
@@ -53,6 +59,7 @@
 			isa = PBXGroup;
 			children = (
 				3A12F5782B89E48B000CD30E /* InitialRender.swift */,
+				3A27488D2B8A279600FC9668 /* LayoutManager.swift */,
 			);
 			path = Rendering;
 			sourceTree = "<group>";
@@ -64,6 +71,8 @@
 				3AE889722B88EB12008C658B /* CanvasData.swift */,
 				3A12F5762B89E35C000CD30E /* RenderData.swift */,
 				3A2748892B89EF6500FC9668 /* RenderLayout.swift */,
+				3A27488B2B8A276700FC9668 /* ImagePosition.swift */,
+				3A27488F2B8A2D4E00FC9668 /* RowData.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -180,6 +189,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3AE889732B88EB12008C658B /* CanvasData.swift in Sources */,
+				3A2748902B8A2D4E00FC9668 /* RowData.swift in Sources */,
 				3A417ACA2B852D400002E09A /* ImageContainerView.swift in Sources */,
 				3A12F5792B89E48B000CD30E /* InitialRender.swift in Sources */,
 				3A2B2BE42B88939600CA14F8 /* PhotoData.swift in Sources */,
@@ -187,8 +197,10 @@
 				3AEFFCE12B6CF6F300026427 /* CanvasView.swift in Sources */,
 				3A12F5772B89E35C000CD30E /* RenderData.swift in Sources */,
 				3A27488A2B89EF6500FC9668 /* RenderLayout.swift in Sources */,
+				3A27488C2B8A276700FC9668 /* ImagePosition.swift in Sources */,
 				3AEFFCD42B6CEA5E00026427 /* ContentView.swift in Sources */,
 				3AEFFCD22B6CEA5E00026427 /* CollyApp.swift in Sources */,
+				3A27488E2B8A279600FC9668 /* LayoutManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

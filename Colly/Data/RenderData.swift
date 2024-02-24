@@ -5,5 +5,5 @@ struct RenderData {
     let row: Int
     let indexInRow: Int
     let originalAspectRatio: CGFloat
-    let aspectRatio: CGFloat
+    let widthRatio: CGFloat
 }
