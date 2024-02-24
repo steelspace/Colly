@@ -2,6 +2,9 @@ import PhotosUI
 import SwiftUI
 
 struct ContentView: View {
+    @State var selectedColumns = 3
+    @State var selectedRows = 3
+
     @State private var selectedItems = [PhotosPickerItem]()
     @State private var selectedImages = [PhotoData]()
     @State private var show = false
@@ -9,7 +12,7 @@ struct ContentView: View {
     var body: some View {
         NavigationStack {
             ZStack {
-                CanvasView(photoData: selectedImages)
+                CanvasView(photoData: selectedImages, canvasData: CanvasData(columns: selectedColumns, rows: selectedRows))
             }
             .toolbar {
                 Button(action: {
@@ -24,8 +27,7 @@ struct ContentView: View {
                          attachmentAnchor: .point(.center),
                          arrowEdge: .top,
                          content: {
-                    Text("Hello, World!")
-                        .padding()
+                    SelectLayoutView(selectedColumns: $selectedColumns, selectedRows: $selectedRows)
                         .presentationCompactAdaptation(.none)
                 })
                 PhotosPicker("Select images", selection: $selectedItems, matching: .images)
@@ -58,6 +60,7 @@ struct ContentView: View {
     let width = nsImage.size.width
     let height = nsImage.size.height
     let aspectRatio = width / height
+    let uuid = UUID().uuidString
     
-    return PhotoData(width: width, height: height, aspectRatio: aspectRatio, image: image)
+    return PhotoData(width: width, height: height, aspectRatio: aspectRatio, imageId: uuid, image: image)
 }

@@ -14,8 +14,8 @@
             filePath = "Colly/ContentView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "38"
-            endingLineNumber = "38"
+            startingLineNumber = "40"
+            endingLineNumber = "40"
             landmarkName = "body"
             landmarkType = "24">
             <Locations>
@@ -92,8 +92,8 @@
             filePath = "Colly/ContentView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "41"
-            endingLineNumber = "41"
+            startingLineNumber = "43"
+            endingLineNumber = "43"
             landmarkName = "body"
             landmarkType = "24">
             <Locations>
@@ -140,8 +140,8 @@
             filePath = "Colly/ContentView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "35"
-            endingLineNumber = "35"
+            startingLineNumber = "37"
+            endingLineNumber = "37"
             landmarkName = "body"
             landmarkType = "24">
          </BreakpointContent>
@@ -156,9 +156,9 @@
             filePath = "Colly/CanvasView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "62"
-            endingLineNumber = "62"
-            landmarkName = "calculateImagePositions(photoData:canvasWidth:canvasHeight:columns:)"
+            startingLineNumber = "80"
+            endingLineNumber = "80"
+            landmarkName = "calculateImagePositions(photoData:canvasWidth:canvasHeight:columns:rows:)"
             landmarkType = "9">
          </BreakpointContent>
       </BreakpointProxy>
@@ -172,9 +172,9 @@
             filePath = "Colly/CanvasView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "39"
-            endingLineNumber = "39"
-            landmarkName = "calculateImagePositions(photoData:canvasWidth:canvasHeight:columns:)"
+            startingLineNumber = "42"
+            endingLineNumber = "42"
+            landmarkName = "calculateImagePositions(photoData:canvasWidth:canvasHeight:columns:rows:)"
             landmarkType = "9">
             <Locations>
                <Location
@@ -220,8 +220,8 @@
             filePath = "Colly/CanvasView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "66"
-            endingLineNumber = "66"
+            startingLineNumber = "84"
+            endingLineNumber = "84"
             landmarkName = "calculateRectanglesWidths(boxWidth:relativeWidths:)"
             landmarkType = "9">
          </BreakpointContent>
@@ -236,9 +236,57 @@
             filePath = "Colly/CanvasView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "42"
-            endingLineNumber = "42"
-            landmarkName = "calculateImagePositions(photoData:canvasWidth:canvasHeight:columns:)"
+            startingLineNumber = "45"
+            endingLineNumber = "45"
+            landmarkName = "calculateImagePositions(photoData:canvasWidth:canvasHeight:columns:rows:)"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "08AF8B2D-95BD-49F7-A46B-CCD20403B93D"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Colly/ContentView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "34"
+            endingLineNumber = "34"
+            landmarkName = "body"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F3360AA2-9179-4B84-9E14-DDB95797CAD6"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Colly/CanvasView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "54"
+            endingLineNumber = "54"
+            landmarkName = "calculateImagePositions(photoData:canvasWidth:canvasHeight:columns:rows:)"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "DEDFDB76-1C54-4188-8DB3-567B24EF6161"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Colly/CanvasView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "55"
+            endingLineNumber = "55"
+            landmarkName = "calculateImagePositions(photoData:canvasWidth:canvasHeight:columns:rows:)"
             landmarkType = "9">
          </BreakpointContent>
       </BreakpointProxy>
