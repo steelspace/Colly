@@ -8,9 +8,10 @@ func calculateImagePositions(renderLayout: RenderLayout,
 
     var imagePositions = [ImagePosition]()
     
-    let rowsData = splitByRows(renderData: renderLayout.renderData)
     var left = 0.0
     var top = 0.0
+    
+    let rowsData = splitByRows(renderData: renderLayout.renderData)
     for rowData in rowsData {
         let widths = calculateActualWidthsInRow(boxWidth: canvasWidth,
                                                 relativeWidths: rowData.renderData.map({ $0.widthRatio }))

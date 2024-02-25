@@ -1,23 +1,24 @@
 import SwiftUI
 
 struct CanvasView: View {
-    let photoData: [PhotoData]
+    let renderLayout: RenderLayout
     let canvasData: CanvasData
     
     var body: some View {
         GeometryReader { geometry in
             ZStack(alignment: .topTrailing, content: {
-                let imagePositions = calculateImagePositions(photoData: photoData,
+                let imagePositions = calculateImagePositions(renderLayout: renderLayout,
                                                              canvasWidth: geometry.size.width,
                                                              canvasHeight: geometry.size.height,
                                                              columns: canvasData.columns,
                                                              rows: canvasData.rows)
                 Rectangle().background(Color.white)
-                ForEach(0..<photoData.count, id: \.self) { index in
+                
+                ForEach(0..<renderLayout.renderData.count, id: \.self) { index in
                     
                     let imagePosition = imagePositions[index]
                                        
-                    ImageContainerView(image: photoData[index].image)
+                    ImageContainerView(image: renderLayout.renderData[index].image)
                         .frame(width: imagePosition.width, height: imagePosition.height)
                         .position(x: imagePosition.x + imagePosition.width / 2.0,
                                   y: imagePosition.y + imagePosition.height / 2.0)
@@ -27,6 +28,7 @@ struct CanvasView: View {
     }
 }
 
+/*
 func calculateImagePositions(photoData: [PhotoData],
                              canvasWidth: CGFloat,
                              canvasHeight: CGFloat,
@@ -77,3 +79,4 @@ func calculateRectanglesWidths(boxWidth: Double, relativeWidths: [Double]) -> [D
     let totalRelativeWidth = relativeWidths.reduce(0, +)
     return relativeWidths.map { ($0 / totalRelativeWidth) * boxWidth }
 }
+*/

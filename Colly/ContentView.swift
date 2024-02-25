@@ -6,13 +6,13 @@ struct ContentView: View {
     @State var selectedRows = 3
 
     @State private var selectedItems = [PhotosPickerItem]()
-    @State private var selectedImages = [PhotoData]()
+    @State private var layout = RenderLayout(renderData: [RenderData]())
     @State private var show = false
     
     var body: some View {
         NavigationStack {
             ZStack {
-                CanvasView(photoData: selectedImages, canvasData: CanvasData(columns: selectedColumns, rows: selectedRows))
+                CanvasView(renderLayout: layout, canvasData: CanvasData(columns: selectedColumns, rows: selectedRows))
             }
             .toolbar {
                 Button(action: {
@@ -34,7 +34,7 @@ struct ContentView: View {
             }
             .onChange(of: selectedItems) {
                 Task {
-                    selectedImages.removeAll()
+                    var selectedImages = [PhotoData]()
                     
                     for item in selectedItems {
                         if let image = try? await item.loadTransferable(type: Image.self) {
@@ -44,6 +44,8 @@ struct ContentView: View {
                             }
                         }
                     }
+                    
+                    layout = initialLayout(photoData: selectedImages)
                 }
             }
         }

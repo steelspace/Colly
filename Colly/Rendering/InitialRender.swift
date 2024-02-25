@@ -10,6 +10,7 @@ func initialLayout(photoData: [PhotoData]) -> RenderLayout {
     
     for photo in photoData {
         let render = RenderData(imageId: photo.imageId,
+                                image: photo.image,
                                 row: row,
                                 indexInRow: indexInRow,
                                 originalAspectRatio: photo.aspectRatio,
