@@ -7,13 +7,11 @@ struct ImageContainerView: View {
         ZStack {
             image
                 .resizable()
-                .scaledToFit()
+                .aspectRatio(contentMode: .fill)
+                .containerRelativeFrame([.horizontal, .vertical])
+                .clipped()
         }
-        .padding(3)
-        .cornerRadius(3)
-        .overlay(
-            RoundedRectangle(cornerRadius: 3)
-            .stroke(.blue, lineWidth: 1)
-        )
+        .padding(10)
+        .background(.white)
     }
 }

@@ -17,8 +17,8 @@ func initialLayout(photoData: [PhotoData]) -> RenderLayout {
                                 widthRatio: photo.aspectRatio)
         
         renderData.append(render)
+        indexInRow += 1
         
-        indexInRow += 1      
         if indexInRow > imagesPerRow {
             indexInRow = 0
             row += 1

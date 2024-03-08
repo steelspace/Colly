@@ -12,14 +12,13 @@ struct CanvasView: View {
                                                              canvasHeight: geometry.size.height,
                                                              columns: canvasData.columns,
                                                              rows: canvasData.rows)
-                Rectangle().background(Color.white)
                 
                 ForEach(0..<renderLayout.renderData.count, id: \.self) { index in
                     
                     let imagePosition = imagePositions[index]
                                        
                     ImageContainerView(image: renderLayout.renderData[index].image)
-                        .frame(width: imagePosition.width, height: imagePosition.height)
+                        .frame(width: imagePosition.width, height: imagePosition.height, alignment: .center)
                         .position(x: imagePosition.x + imagePosition.width / 2.0,
                                   y: imagePosition.y + imagePosition.height / 2.0)
                 }
